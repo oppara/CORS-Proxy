@@ -1,0 +1,8 @@
+version: '3'
+services:
+  corsproxy:
+    build: .
+    container_name: corsproxy
+    image: corsproxy
+    ports:
+    - "1337:1337"
