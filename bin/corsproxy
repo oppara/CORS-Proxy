@@ -41,8 +41,8 @@ proxy.route({
         request.path = request.path.substr(request.params.host.length + 1)
         request.headers['host'] = request.host
         var query = request.url.search ? request.url.search : ''
-        console.log('proxy to http://' + request.host + request.path)
-        callback(null, 'http://' + request.host + request.path + query, request.headers)
+        console.log('proxy to https://' + request.host + request.path)
+        callback(null, 'https://' + request.host + request.path + query, request.headers)
       }
     }
   },
