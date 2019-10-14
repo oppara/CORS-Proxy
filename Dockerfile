@@ -1,6 +1,6 @@
 FROM node:8
 
-RUN npm install -g corsproxy
+RUN npm install -g git+https://github.com/oppara/CORS-Proxy.git
 
 EXPOSE 1337
 
